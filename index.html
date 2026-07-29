@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시차와 연주 시차 - AI·디지털 기반 교수학습</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            /* 폰트는 최근 많이 쓰이는 깔끔한 Pretendard (없으면 시스템 기본 폰트) */
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            /* 요청하신 부드러운 노란색 배경 (그라데이션 적용으로 고급스러움 추가) */
+            background: linear-gradient(135deg, #fdfbfb 0%, #fff6c9 100%);
+            min-height: 100vh;
+        }
+        
+        .card-link {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-link:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px -10px rgba(234, 179, 8, 0.25);
+            border-color: #fde047; /* yellow-300 */
+        }
+
+        .icon-box {
+            transition: transform 0.3s ease;
+        }
+
+        .card-link:hover .icon-box {
+            transform: scale(1.1);
+        }
+
+        .arrow-icon {
+            transition: all 0.3s ease;
+        }
+
+        .card-link:hover .arrow-icon {
+            transform: translate(2px, -2px);
+            color: #ca8a04; /* yellow-600 */
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center mb-10 w-full max-w-5xl">
+        <p class="text-yellow-700 font-semibold mb-3 tracking-wide">중학교 3학년 2학기 과학 - 7. 별과 우주</p>
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 tracking-tight">시차와 연주 시차</h1>
+        <span class="inline-block bg-gradient-to-r from-yellow-300 to-yellow-400 text-yellow-900 px-6 py-2 rounded-full font-bold shadow-sm text-sm">
+            AI·디지털 기반 교수학습 실행
+        </span>
+    </div>
+
+    <main class="bg-white w-full max-w-5xl rounded-[2.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.05)] p-8 md:p-12 lg:p-14">
+        
+        <!-- 섹션 헤더 -->
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 pb-4 border-b border-yellow-200/50 gap-4">
+            <div>
+                <h2 class="text-2xl font-bold text-gray-800">강의 자료 바로가기</h2>
+                <p class="text-sm text-gray-500 mt-1">원하는 항목을 선택하면 새 창에서 열립니다.</p>
+            </div>
+        </div>
+
+        <!-- 그리드 레이아웃: 모바일 2칸, 태블릿 3칸, 데스크탑 4칸 -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-5">
+
+            <a href="#" target="_blank" class="card-link group block p-5 rounded-[2rem] bg-white border border-gray-100 relative h-36 flex flex-col justify-between hover:border-purple-300">
+                <div class="flex justify-between items-start">
+                    <div class="icon-box w-11 h-11 rounded-2xl bg-purple-50 flex items-center justify-center text-purple-600 shadow-sm border border-purple-100">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+                    </div>
+                    <svg class="arrow-icon w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-800 group-hover:text-purple-700 transition-colors">흥미 1</h3>
+                    <p class="text-[11px] text-gray-400 mt-1 truncate">착시 사진 공유 패들렛</p>
+                </div>
+            </a>
+
+            <a href="#" target="_blank" class="card-link group block p-5 rounded-[2rem] bg-white border border-gray-100 relative h-36 flex flex-col justify-between hover:border-purple-300">
+                <div class="flex justify-between items-start">
+                    <div class="icon-box w-11 h-11 rounded-2xl bg-purple-50 flex items-center justify-center text-purple-600 shadow-sm border border-purple-100">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+                    </div>
+                    <svg class="arrow-icon w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-800 group-hover:text-purple-700 transition-colors">흥미 2</h3>
+                    <p class="text-[11px] text-gray-400 mt-1 truncate">도입 자료 링크</p>
+                </div>
+            </a>
+
+            <a href="#" target="_blank" class="card-link group block p-5 rounded-[2rem] bg-white border border-gray-100 relative h-36 flex flex-col justify-between hover:border-purple-300">
+                <div class="flex justify-between items-start">
+                    <div class="icon-box w-11 h-11 rounded-2xl bg-purple-50 flex items-center justify-center text-purple-600 shadow-sm border border-purple-100">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+                    </div>
+                    <svg class="arrow-icon w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-800 group-hover:text-purple-700 transition-colors">흥미 3</h3>
+                    <p class="text-[11px] text-gray-400 mt-1 truncate">도입 자료 링크</p>
+                </div>
+            </a>
+
+            <!-- 빈 공간 채우기 (정렬 유지) -->
+            <div class="hidden lg:block"></div>
+
+            <a href="#" target="_blank" class="card-link group block p-5 rounded-[2rem] bg-white border border-gray-100 relative h-36 flex flex-col justify-between hover:border-teal-300">
+                <div class="flex justify-between items-start">
+                    <div class="icon-box w-11 h-11 rounded-2xl bg-teal-50 flex items-center justify-center text-teal-600 shadow-sm border border-teal-100">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+                    </div>
+                    <svg class="arrow-icon w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-800 group-hover:text-teal-700 transition-colors">탐색 1</h3>
+                    <p class="text-[11px] text-gray-400 mt-1 truncate">시차 측정하기 활동지</p>
+                </div>
+            </a>
+
+            <a href="#" target="_blank" class="card-link group block p-5 rounded-[2rem] bg-white border border-gray-100 relative h-36 flex flex-col justify-between hover:border-teal-300">
+                <div class="flex justify-between items-start">
+                    <div class="icon-box w-11 h-11 rounded-2xl bg-teal-50 flex items-center justify-center text-teal-600 shadow-sm border border-teal-100">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+                    </div>
+                    <svg class="arrow-icon w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-800 group-hover:text-teal-700 transition-colors">탐색 2</h3>
+                    <p class="text-[11px] text-gray-400 mt-1 truncate">탐색 자료 링크</p>
+                </div>
+            </a>
+
+            <a href="#" target="_blank" class="card-link group block p-5 rounded-[2rem] bg-white border border-gray-100 relative h-36 flex flex-col justify-between hover:border-teal-300">
+                <div class="flex justify-between items-start">
+                    <div class="icon-box w-11 h-11 rounded-2xl bg-teal-50 flex items-center justify-center text-teal-600 shadow-sm border border-teal-100">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+                    </div>
+                    <svg class="arrow-icon w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-800 group-hover:text-teal-700 transition-colors">탐색 3</h3>
+                    <p class="text-[11px] text-gray-400 mt-1 truncate">탐색 자료 링크</p>
+                </div>
+            </a>
+
+            <!-- 빈 공간 채우기 (정렬 유지) -->
+            <div class="hidden lg:block"></div>
+
+            <a href="#" target="_blank" class="card-link group block p-5 rounded-[2rem] bg-white border border-gray-100 relative h-36 flex flex-col justify-between hover:border-yellow-300">
+                <div class="flex justify-between items-start">
+                    <div class="icon-box w-11 h-11 rounded-2xl bg-yellow-50 flex items-center justify-center text-yellow-600 shadow-sm border border-yellow-100">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+                    </div>
+                    <svg class="arrow-icon w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-800 group-hover:text-yellow-700 transition-colors">개념도입 1</h3>
+                    <p class="text-[11px] text-gray-400 mt-1 truncate">제미나이 웹앱 제작 링크</p>
+                </div>
+            </a>
+
+            <a href="#" target="_blank" class="card-link group block p-5 rounded-[2rem] bg-white border border-gray-100 relative h-36 flex flex-col justify-between hover:border-yellow-300">
+                <div class="flex justify-between items-start">
+                    <div class="icon-box w-11 h-11 rounded-2xl bg-yellow-50 flex items-center justify-center text-yellow-600 shadow-sm border border-yellow-100">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+                    </div>
+                    <svg class="arrow-icon w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-800 group-hover:text-yellow-700 transition-colors">개념도입 2</h3>
+                    <p class="text-[11px] text-gray-400 mt-1 truncate">교과서 251쪽 개념 학습</p>
+                </div>
+            </a>
+
+            <a href="#" target="_blank" class="card-link group block p-5 rounded-[2rem] bg-white border border-gray-100 relative h-36 flex flex-col justify-between hover:border-yellow-300">
+                <div class="flex justify-between items-start">
+                    <div class="icon-box w-11 h-11 rounded-2xl bg-yellow-50 flex items-center justify-center text-yellow-600 shadow-sm border border-yellow-100">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+                    </div>
+                    <svg class="arrow-icon w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-800 group-hover:text-yellow-700 transition-colors">개념도입 3</h3>
+                    <p class="text-[11px] text-gray-400 mt-1 truncate">개념 자료 링크</p>
+                </div>
+            </a>
+
+            <!-- 빈 공간 채우기 (정렬 유지) -->
+            <div class="hidden lg:block"></div>
+
+            <a href="#" target="_blank" class="card-link group block p-5 rounded-[2rem] bg-white border border-gray-100 relative h-36 flex flex-col justify-between hover:border-rose-300">
+                <div class="flex justify-between items-start">
+                    <div class="icon-box w-11 h-11 rounded-2xl bg-rose-50 flex items-center justify-center text-rose-500 shadow-sm border border-rose-100">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+                    </div>
+                    <svg class="arrow-icon w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-800 group-hover:text-rose-600 transition-colors">적용 1</h3>
+                    <p class="text-[11px] text-gray-400 mt-1 truncate">개념 점검 퀴즈</p>
+                </div>
+            </a>
+
+            <a href="#" target="_blank" class="card-link group block p-5 rounded-[2rem] bg-white border border-gray-100 relative h-36 flex flex-col justify-between hover:border-rose-300">
+                <div class="flex justify-between items-start">
+                    <div class="icon-box w-11 h-11 rounded-2xl bg-rose-50 flex items-center justify-center text-rose-500 shadow-sm border border-rose-100">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+                    </div>
+                    <svg class="arrow-icon w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-800 group-hover:text-rose-600 transition-colors">적용 2</h3>
+                    <p class="text-[11px] text-gray-400 mt-1 truncate">적용 자료 링크</p>
+                </div>
+            </a>
+
+            <a href="#" target="_blank" class="card-link group block p-5 rounded-[2rem] bg-white border border-gray-100 relative h-36 flex flex-col justify-between hover:border-rose-300">
+                <div class="flex justify-between items-start">
+                    <div class="icon-box w-11 h-11 rounded-2xl bg-rose-50 flex items-center justify-center text-rose-500 shadow-sm border border-rose-100">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+                    </div>
+                    <svg class="arrow-icon w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-800 group-hover:text-rose-600 transition-colors">적용 3</h3>
+                    <p class="text-[11px] text-gray-400 mt-1 truncate">심화 학습 링크</p>
+                </div>
+            </a>
+
+        </div>
+    </main>
+
+    <footer class="mt-12 text-center text-yellow-800/60 text-sm">
+        <p>지도교사: 박수민 | 단원: 7. 별과 우주</p>
+    </footer>
+
+</body>
+</html>
